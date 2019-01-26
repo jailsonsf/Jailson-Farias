@@ -8,7 +8,7 @@ public class Vendedor extends Empregado
     public Vendedor (String nome, float salario, float perComissao)
     {
         super(nome, salario);
-        this.comissao = perComissao;
+        setComissao(perComissao);
     }
 
     public float calcularSalario()
