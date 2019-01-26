@@ -1,11 +1,11 @@
-package Encapsulamento.exercicio2;
+package encapsulamento.exercicio2;
 
 public class Carro
 {
 
     private String marca;
     private String cor;
-    private String ano;
+    private int ano;
 
     public Carro ( String marca, String cor, int ano)
     {

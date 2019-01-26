@@ -1,4 +1,4 @@
-package Encapsulamento.exercicio3;
+package encapsulamento.exercicio3;
 
 public class Conta
 {

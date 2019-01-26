@@ -1,4 +1,4 @@
-package Encapsulamento.exercicio1;
+package encapsulamento.exercicio1;
 
 public class Pessoa
 {
