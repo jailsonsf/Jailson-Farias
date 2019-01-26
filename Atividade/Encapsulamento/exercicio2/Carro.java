@@ -29,9 +29,9 @@ public class Carro
         this.ano = ano;
     }
 
-    public String getNome ()
+    public String getMarca ()
     {
-        return nome;
+        return marca;
     }
 
     public String getCor ()
