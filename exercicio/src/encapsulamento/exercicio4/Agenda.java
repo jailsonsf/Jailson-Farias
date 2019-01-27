@@ -6,10 +6,11 @@ public class Agenda
 {
 
     ArrayList<Nota> notas;
+    private Nota n;
 
     public void adicionar(String dono, String texto)
     {
-        Nota n = new Nota (dono, texto);
+        n = new Nota (dono, texto);
         notas.add(n);
     }
 

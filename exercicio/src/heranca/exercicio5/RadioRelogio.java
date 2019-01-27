@@ -30,7 +30,7 @@ public abstract class RadioRelogio implements Radio, Relogio
     }
 
     @Override
-    public String getTipoEmi ()
+    public String getTipoEmissora ()
     {
         return tipoEmissora;
     }
