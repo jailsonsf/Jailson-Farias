@@ -2,24 +2,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - DemoApplication",
+            "name": "CodeLens (Launch) - P2lp2Application",
             "request": "launch",
-            "mainClass": "com.p2lp2.projectp2lp2.DemoApplication"
+            "mainClass": "com.projectp2lp2.P2lp2Application"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Animal",
-            "request": "launch",
-            "mainClass": "polimorfismo.exercicio4.Animal",
-            "projectName": "src"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<project-p2lp2>",
+            "name": "Spring Boot-P2lp2Application<project-p2lp2>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.p2lp2.projectp2lp2.DemoApplication",
+            "mainClass": "com.projectp2lp2.P2lp2Application",
             "projectName": "project-p2lp2",
             "args": ""
         }

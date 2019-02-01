@@ -1,14 +1,14 @@
-package com.p2lp2.projectp2lp2;
+package com.projectp2lp2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class P2lp2Application {
 
 	public static void main(String[] args)
 	{
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(P2lp2Application.class, args);
 	}
 
 }
