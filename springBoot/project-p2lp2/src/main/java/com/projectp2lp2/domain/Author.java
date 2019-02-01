@@ -1,4 +1,4 @@
-package com.projectp2lp2.models;
+package com.projectp2lp2.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
