@@ -1,4 +1,4 @@
-package com.projectp2lp2.domain;
+package com.booksale.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

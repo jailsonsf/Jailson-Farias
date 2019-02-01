@@ -9,6 +9,16 @@
             "mainClass": "com.booksale.DemoApplication",
             "projectName": "booksale",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BookSaleApplication<booksale>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.booksale.BookSaleApplication",
+            "projectName": "booksale",
+            "args": ""
         }
     ]
 }
