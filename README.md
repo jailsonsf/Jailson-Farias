@@ -1,2 +1,3 @@
 # Jailson-Farias
-Repositório para a disciplina de P2/LP2
+
+Repository for P2/LP2 discipline
