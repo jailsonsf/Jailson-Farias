@@ -1,4 +1,4 @@
-package com.projectp2lp2.domain;
+package com.booksale.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,23 +6,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Author
+public class User
 {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
     private int age;
-    private String nationaly;
-    
-    public Author (){}
+    private String address;
 
-    public Author (String name, int age, String nationaly)
+    public User (){}
+
+    public User (String name, int age, String address)
     {
+        super();
         setName (name);
         setAge (age);
-        setNationaly (nationaly);
+        setAddress (address);
     }
 
     public Integer getId ()
@@ -50,13 +51,13 @@ public class Author
         return age;
     }
 
-    public void setNationaly (String nationaly)
+    public void setAddress (String address)
     {
-        this.nationaly = nationaly;
+        this.address = address;
     }
 
-    public String getNationaly ()
+    public String getAddress ()
     {
-        return nationaly;
+        return address;
     }
 }

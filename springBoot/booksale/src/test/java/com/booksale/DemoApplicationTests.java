@@ -1,4 +1,4 @@
-package com.p2lp2.projectp2lp2;
+package com.booksale;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -2,18 +2,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - P2lp2Application",
-            "request": "launch",
-            "mainClass": "com.projectp2lp2.P2lp2Application"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-P2lp2Application<project-p2lp2>",
+            "name": "Spring Boot-DemoApplication<booksale>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.projectp2lp2.P2lp2Application",
-            "projectName": "project-p2lp2",
+            "mainClass": "com.booksale.DemoApplication",
+            "projectName": "booksale",
             "args": ""
         }
     ]

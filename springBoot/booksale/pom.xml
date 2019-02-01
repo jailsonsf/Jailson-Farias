@@ -8,8 +8,8 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.p2lp2</groupId>
-	<artifactId>project-p2lp2</artifactId>
+	<groupId>com</groupId>
+	<artifactId>booksale</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
