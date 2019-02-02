@@ -1,0 +1,1 @@
+insert into author(id, name, age, nationaly) values(1, 'jailson', 29, 'Brasil')
