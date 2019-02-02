@@ -19,6 +19,11 @@ public abstract class Animal
         return getNome() + " é um animal";
     }
 
+    public String getDescricao2 ()
+    {
+        return descricao;
+    }
+
     public void setNome (String nome)
     {
         this.nome = nome;
