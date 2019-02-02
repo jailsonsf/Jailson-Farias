@@ -34,7 +34,7 @@ public class Book
         this.title = title;
     }
 
-    pubic String getTitle ()
+    public String getTitle ()
     {
         return title;
     }
