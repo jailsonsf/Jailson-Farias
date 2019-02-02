@@ -40,12 +40,11 @@ public class AuthorResources
         Author savedAuthor = repository.save(author);
 
         List<Book> books = savedAuthor.getAllBooks();
-        savedAuthor.setBooks(books);
 
-        for (Book eachBooks : books)
+        for (int i = 0; i < books.size(); i += 1)
         {
-            eachBooks.setAuthor(savedAuthor);
-            bookRepository.save(eachBooks);
+            books.get(i).setAuthor(savedAuthor);
+            bookRepository.save(books.get(i));
         }
 
         URI uri = ServletUriComponentsBuilder.
