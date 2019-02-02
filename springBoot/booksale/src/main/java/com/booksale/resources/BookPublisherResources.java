@@ -15,7 +15,7 @@ public class BookPublisherResources
     @Autowired
     private BookPublisherRepository repository;
 
-    @GetMapping("/bookPublisher")
+    @GetMapping("/bookPublishers")
     public List<BookPublisher> getAll()
     {
         List<BookPublisher> bookPublishers = repository.findAll();
