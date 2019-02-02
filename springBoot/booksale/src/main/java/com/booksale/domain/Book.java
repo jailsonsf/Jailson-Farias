@@ -27,7 +27,7 @@ public class Book
 
     public Book (){}
 
-    public Book (Integer id, String title, String description, Author author, BookPublisher bookPublisher)
+    public Book (String title, String description)
     {
         super();
         setTitle (title);

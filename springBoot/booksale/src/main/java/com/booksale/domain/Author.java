@@ -63,15 +63,10 @@ public class Author
     public String getNationaly() {
         return nationaly;
     }
-
-    public void setBooks (List<Book> books)
-    {
-        this.books = books;
-    }
-
-    public List<Book> getAllBooks ()
-    {
-        return books;
-    }
+    
+    // public List<Book> getAllBooks ()
+    // {
+    //     return books;
+    // }
     
 }
