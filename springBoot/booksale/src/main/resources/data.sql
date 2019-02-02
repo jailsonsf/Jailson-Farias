@@ -1,1 +1,1 @@
-insert into user(id, name, age, address) values(1, 'jailson', 23, 'rua normal, centro')
+insert into author(id, name, age, nationaly) values(1, 'jailson', 23, 'brasil')
