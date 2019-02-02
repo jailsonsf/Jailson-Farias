@@ -23,6 +23,9 @@ public class BookPublisher
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "bookPublisher")
     private List<Book> books;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "bookPublisher")
+    private List<Employee> employees;
+
     public BookPublisher (){}
 
     public BookPublisher (String name, String cnpj)
@@ -65,6 +68,16 @@ public class BookPublisher
     public List<Book> getAllBooks ()
     {
         return books;
+    }
+
+    public void setEmployees (List<Employee> employees)
+    {
+        this.employees = employees;
+    }
+
+    public List<Employee> getAllEmployees ()
+    {
+        return employees;
     }
 
 }
