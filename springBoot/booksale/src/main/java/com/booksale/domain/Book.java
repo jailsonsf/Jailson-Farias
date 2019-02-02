@@ -8,7 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Book {
+public class Book
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -19,6 +20,10 @@ public class Book {
     @ManyToOne(optional = false)
     @JoinColumn(name = "author_id")
     private Author author;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "bookpublisher_id")
+    private BookPublisher bookPublisher;
 
     public Book (){}
 

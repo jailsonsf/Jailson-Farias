@@ -1,9 +1,13 @@
 package com.booksale.domain;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class BookPublisher
@@ -15,6 +19,9 @@ public class BookPublisher
 
     private String name;
     private String cnpj;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "bookPublisher")
+    private List<Book> books;
 
     public BookPublisher (){}
 
@@ -48,6 +55,16 @@ public class BookPublisher
     public String getCnpj ()
     {
         return cnpj;
+    }
+
+    public void setBooks (List<Book> books)
+    {
+        this.books = books;
+    }
+
+    public List<Book> getAllBooks ()
+    {
+        return books;
     }
 
 }
