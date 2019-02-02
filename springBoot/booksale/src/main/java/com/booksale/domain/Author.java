@@ -1,9 +1,13 @@
 package com.booksale.domain;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Author
@@ -15,6 +19,9 @@ public class Author
     private String name;
     private int age;
     private String nationaly;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "author")
+    private List<Book> books;
 
     public Author() {
     }
@@ -52,6 +59,16 @@ public class Author
 
     public String getNationaly() {
         return nationaly;
+    }
+
+    public void setBooks (List<Book> books)
+    {
+        this.books = books;
+    }
+
+    public List<Book> getAllBooks ()
+    {
+        return books;
     }
     
 }
