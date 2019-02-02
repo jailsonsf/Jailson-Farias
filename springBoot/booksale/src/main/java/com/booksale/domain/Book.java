@@ -32,8 +32,6 @@ public class Book
         super();
         setTitle (title);
         setDescription (description);
-        setAuthor (author);
-        setBookPublisher (bookPublisher);
     }
 
     public Integer getId ()
@@ -59,26 +57,6 @@ public class Book
     public String getDescription ()
     {
         return description;
-    }
-
-    public void setAuthor (Author author)
-    {
-        this.author = author;
-    }
-
-    public Author getAuthor ()
-    {
-        return author;
-    }
-
-    public void setBookPublisher (BookPublisher bookPublisher)
-    {
-        this.bookPublisher = bookPublisher;
-    }
-
-    public BookPublisher getBookPublisher ()
-    {
-        return bookPublisher;
     }
 
 }
