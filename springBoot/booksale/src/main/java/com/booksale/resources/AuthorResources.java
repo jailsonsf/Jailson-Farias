@@ -1,5 +1,6 @@
 package com.booksale.resources;
 
+import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
@@ -10,9 +11,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
 @RestController
@@ -27,6 +31,21 @@ public class AuthorResources
         List<Author> authors = repository.findAll();
 
         return authors;
+    }
+
+    @PostMapping("/authors")
+    public ResponseEntity<?> saveAuthor (@RequestBody Author author)
+    {
+        Author savedAuthor = repository.save(author);
+
+        URI uri = ServletUriComponentsBuilder.
+            fromCurrentRequest().
+            path("/{id}").
+            buildAndExpand(savedAuthor.getId()).
+            toUri();
+
+        return ResponseEntity.created(uri).body("Nome e id do novo Autor: " +
+            savedAuthor.getName() + " - " + savedAuthor.getId());
     }
 
     @PutMapping("/authors/{id}")
