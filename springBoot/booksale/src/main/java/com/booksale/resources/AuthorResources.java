@@ -39,14 +39,6 @@ public class AuthorResources
     {
         Author savedAuthor = repository.save(author);
 
-        List<Book> books = savedAuthor.getAllBooks();
-
-        for (int i = 0; i < books.size(); i += 1)
-        {
-            books.get(i).setAuthor(savedAuthor);
-            bookRepository.save(books.get(i));
-        }
-
         URI uri = ServletUriComponentsBuilder.
             fromCurrentRequest().
             path("/{id}").
