@@ -3,35 +3,35 @@ package polimorfismo.exercicio4;
 public abstract class Animal
 {
 
-    private String descricao;
-    private String nome;
+    private String description;
+    private String name;
 
-    public abstract void locomover ();
-    public abstract void alimentar ();
+    public abstract void move ();
+    public abstract void eat ();
 
-    public void setDescricao (String descricao)
+    public void setDescription (String description)
     {
-        this.descricao = descricao;
+        this.description = description;
     }
 
-    public String getDescricao ()
+    public String getDescription ()
     {
-        return getNome() + " é um animal";
+        return getName() + " é um animal";
     }
 
-    public String getDescricao2 ()
+    public String getDescription2 ()
     {
-        return descricao;
+        return description;
     }
 
-    public void setNome (String nome)
+    public void setName (String name)
     {
-        this.nome = nome;
+        this.name = name;
     }
     
-    public String getNome()
+    public String getName()
     {
-        return nome;
+        return name;
     }
     
 
