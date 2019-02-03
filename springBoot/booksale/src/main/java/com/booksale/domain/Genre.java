@@ -49,4 +49,9 @@ public class Genre
         return description;
     }
 
+    public void setId(int id)
+    {
+        this.id = id;
+	}
+
 }
