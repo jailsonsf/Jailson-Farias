@@ -25,6 +25,10 @@ public class Book
     @JoinColumn(name = "bookpublisher_id")
     private BookPublisher bookPublisher;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "genre_id")
+    private Genre genre;
+
     public Book (){}
 
     public Book (String title, String description)
