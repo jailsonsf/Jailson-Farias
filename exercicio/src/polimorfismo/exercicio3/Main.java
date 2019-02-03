@@ -8,13 +8,13 @@ public class Main
     public static void main (String[] args)
     {
 
-        Adicao a = new Adicao();
-        Subtracao s = new Subtracao();
-        Divisao d = new Divisao();
-        Multiplicacao m = new Multiplicacao();
+        Addition a = new Addition();
+        Subtraction s = new Subtraction();
+        Division d = new Division();
+        Multiplication m = new Multiplication();
 
         Scanner in = new Scanner(System.in);
-        ArrayList<Float> numeros = new ArrayList<Float>();
+        ArrayList<Float> numbers = new ArrayList<Float>();
 
         float num = 1;
 
@@ -24,25 +24,25 @@ public class Main
 
             if (num != 0)
             {
-                numeros.add(num);
+                numbers.add(num);
             }
         }
 
         in.close();
 
-        if (numeros.size() == 2)
+        if (numbers.size() == 2)
         {
-            System.out.println("Soma: " + a.calcular(numeros.get(0), numeros.get(1)));
-            System.out.println("Subtração: " + s.calcular(numeros.get(0), numeros.get(1)));
-            System.out.println("Divisão: " + d.calcular(numeros.get(0), numeros.get(1)));
-            System.out.println("Multiplicação: " + m.calcular(numeros.get(0), numeros.get(1)));
+            System.out.println("Soma: " + a.calculate(numbers.get(0), numbers.get(1)));
+            System.out.println("Subtração: " + s.calculate(numbers.get(0), numbers.get(1)));
+            System.out.println("Divisão: " + d.calculate(numbers.get(0), numbers.get(1)));
+            System.out.println("Multiplicação: " + m.calculate(numbers.get(0), numbers.get(1)));
 
         } else {
         	
-            System.out.println("Soma: " + a.calcular(numeros));
-            System.out.println("Subtração: " + s.calcular(numeros));
-            System.out.println("Divisão: " + d.calcular(numeros));
-            System.out.println("Multiplicação: " + m.calcular(numeros));
+            System.out.println("Soma: " + a.calculate(numbers));
+            System.out.println("Subtração: " + s.calculate(numbers));
+            System.out.println("Divisão: " + d.calculate(numbers));
+            System.out.println("Multiplicação: " + m.calculate(numbers));
             
         }
 
