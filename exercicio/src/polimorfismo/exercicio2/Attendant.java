@@ -1,10 +1,10 @@
 package polimorfismo.exercicio2;
 
-public class Atendente extends Funcionario
+public class Attendant extends Employee
 {
     @Override
     public String toString ()
     {
-        return getNome() + " é atendente";
+        return getName() + " é atendente";
     }
 }

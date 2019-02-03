@@ -4,19 +4,19 @@ public class Main
 {
     public static void main (String[] args)
     {
-        Funcionario g = new Funcionario();
-        g.setFuncao("atendente");
+        Employee g = new Employee();
+        g.setFunction("atendente");
 
-        String nome = "Zezinho";
+        String name = "Zezinho";
 
-        if (g.getFuncao().equals("gerente"))
+        if (g.getFunction().equals("gerente"))
         {
-            g = new Gerente();
-            g.setNome(nome);
-        } else if (g.getFuncao().equals("atendente")) {
+            g = new Manager();
+            g.setName(name);
+        } else if (g.getFunction().equals("atendente")) {
 
-            g = new Atendente();
-            g.setNome(nome);
+            g = new Attendant();
+            g.setName(name);
         }
 
         System.out.println(g);
