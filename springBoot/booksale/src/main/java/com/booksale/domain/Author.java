@@ -69,9 +69,4 @@ public class Author
         return nationaly;
     }
     
-    // public List<Book> getAllBooks ()
-    // {
-    //     return books;
-    // }
-    
 }

@@ -64,7 +64,7 @@ public class AuthorResources
         return ResponseEntity.noContent().build();
     }
     
-    @DeleteMapping("/persons/{id}")
+    @DeleteMapping("/authors/{id}")
     public void deleteAuthor(@PathVariable int id)
     {
         Optional<Author> authorFound = repository.findById(id);

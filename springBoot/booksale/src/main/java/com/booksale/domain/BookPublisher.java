@@ -80,4 +80,9 @@ public class BookPublisher
         return employees;
     }
 
+    public void setId(int id)
+    {
+        this.id = id;
+	}
+
 }
