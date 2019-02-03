@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Person",
+            "request": "launch",
+            "mainClass": "encapsulamento.exercicio1.Person",
+            "projectName": "src"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-DemoApplication<booksale>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
