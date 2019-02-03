@@ -9,5 +9,6 @@ public class Main
 
         System.out.println("Gerente: \n" + g + "\n\n");
         System.out.println("Vendedor: \n" + v);
+        
     }
 }

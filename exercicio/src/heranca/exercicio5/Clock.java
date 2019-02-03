@@ -2,7 +2,6 @@ package heranca.exercicio5;
 
 public interface Clock
 {
-
     public void setTime (String time);
     public String getTime ();
 
@@ -14,5 +13,4 @@ public interface Clock
 
     public void setClockVolume (int vol);
     public int getClockVolume ();
-
 }
