@@ -2,6 +2,7 @@ package encapsulamento.exercicio4;
 
 public class Grades
 {
+	
     private String owner;
 	private String text;
 	private boolean estate;

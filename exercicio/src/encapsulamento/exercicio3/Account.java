@@ -51,5 +51,4 @@ public class Account
             this.balance -= value;
         }
     }
-
 }

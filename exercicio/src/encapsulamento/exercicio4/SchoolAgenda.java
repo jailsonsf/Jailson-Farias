@@ -65,5 +65,4 @@ public class SchoolAgenda
             grades.get(idGrades).setEstate(false);
         }
     }
-
 }

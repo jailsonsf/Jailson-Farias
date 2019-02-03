@@ -2,7 +2,6 @@ package encapsulamento.exercicio1;
 
 public class Person
 {
-
     public Person (String name, String lastName, int age, String cpf)
     {
         setName (name);
@@ -60,6 +59,5 @@ public class Person
     public String getFullName ()
     {
         return name + " " + lastName;
-    }
-    
+    }   
 }

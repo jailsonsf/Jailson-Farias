@@ -2,7 +2,6 @@ package encapsulamento.exercicio2;
 
 public class Car
 {
-
     private String brand;
     private String color;
     private int year;
@@ -43,5 +42,4 @@ public class Car
     {
         return year;
     }
-
 }
