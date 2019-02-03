@@ -5,8 +5,8 @@ public class Main
     public static void main(String[] args)
     {
 
-        Recursivo r = new Recursivo();
-        Iterativo i = new Iterativo();
+        Recursive r = new Recursive();
+        Iterative i = new Iterative();
 
         System.out.println("Recursivo: " + r.calcular(5));
         System.out.println("Iterativo: " + i.calcular(6));
