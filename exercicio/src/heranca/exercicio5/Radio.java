@@ -3,11 +3,11 @@ package heranca.exercicio5;
 public interface Radio
 {
 
-    public void setEmissora (String emissora, String tipoEmi);
-    public String getEmissora ();
-    public String getTipoEmissora ();
+    public void setStation (String estation, String typeEstation);
+    public String getStation ();
+    public String getTypeStation ();
 
-    public void setVolumeRadio (int vol);
-    public int getVolumeRadio ();
+    public void setRadioVolume (int vol);
+    public int getRadioVolume ();
 
 }
