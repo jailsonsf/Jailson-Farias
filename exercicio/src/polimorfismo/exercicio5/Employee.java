@@ -1,21 +1,21 @@
 package polimorfismo.exercicio5;
 
-public abstract class Empregado
+public abstract class Employee
 {
-    private String nome;
+    private String name;
     private String cpf;
     private String rg;
 
-    public abstract double calcularGanho();
+    public abstract double calculateGain();
 
-    public void setNome (String nome)
+    public void setName (String name)
     {
-        this.nome = nome;
+        this.name = name;
     }
 
-    public String getNome ()
+    public String getName ()
     {
-        return nome;
+        return name;
     }
 
     public void setCPF (String cpf)
