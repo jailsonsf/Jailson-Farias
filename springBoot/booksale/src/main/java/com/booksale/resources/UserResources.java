@@ -43,7 +43,7 @@ public class UserResources
             buildAndExpand(savedUser.getId()).
             toUri();
 
-        return ResponseEntity.created(uri).body("Nome e id do novo Autor: " +
+        return ResponseEntity.created(uri).body("Nome e id do novo Usuário: " +
             savedUser.getName() + " - " + savedUser.getId());
     }
 
